@@ -49,3 +49,19 @@ The model is trained on labeled MRI images to classify whether a scan shows the 
    ```bash
    git clone https://github.com/your-username/brain-tumor-detection.git
    cd brain-tumor-detection
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+streamlit run app.py
+
+brain-tumor-detection/
+├── data/               # MRI dataset
+├── models/             # Trained models
+├── outputs/            # Grad-CAM and reports
+├── app.py              # Streamlit app
+├── utils.py            # Utility functions
+├── requirements.txt    # Python dependencies
+├── README.md           # Project description
